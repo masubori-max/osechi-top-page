@@ -58,6 +58,7 @@
 .osechi-button:hover { filter: brightness(1.08); transform: translateY(-1px); }
 .osechi-button:focus-visible, .osechi-page a:focus-visible { outline: 3px solid #2673d9; outline-offset: 3px; }
 .osechi-button--primary, .osechi-button--official { background: var(--osechi-wine); border-color: var(--osechi-gold); }
+.osechi-button--articles { background: #218c2f; border-color: #197226; }
 .osechi-button--amazon { color: #241b0e !important; background: #f3b33d; }
 .osechi-button--rakuten { background: #a81324; }
 .osechi-summary-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; }
