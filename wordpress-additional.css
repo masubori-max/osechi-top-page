@@ -69,6 +69,8 @@
 .osechi-summary-card { grid-column: span 2; position: relative; min-height: 220px; padding: 26px; background: linear-gradient(145deg, #fff, var(--osechi-ivory)); border: 1px solid var(--osechi-border); border-top: 4px solid var(--osechi-gold); box-shadow: 0 8px 24px rgba(62,43,27,.09); }
 .osechi-summary-card p { margin: 8px 0; font-size: .92rem; }.osechi-summary-card__fit { min-height: 3.4em; font-weight: 700; }
 .osechi-summary-card a { color: var(--osechi-wine); font-weight: 700; }
+.osechi-summary-card--second .osechi-summary-card__media { width: 90%; max-width: none; margin-right: auto; margin-left: auto; }
+.osechi-summary-card--second .osechi-summary-card__media img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .osechi-rank { display: inline-block; margin: 0 0 8px; padding: 2px 10px; color: #fff; font-size: .82rem; font-weight: 700; background: var(--osechi-gold); border-radius: 999px; }
 .osechi-rank--large { flex: 0 0 auto; margin: 0; padding: 8px 13px; font-size: 1rem; }
 .osechi-table-wrap { overflow-x: auto; border: 1px solid var(--osechi-border); }
