@@ -29,6 +29,13 @@
 .home .share-top,
 .home article > .clearfix,
 .home article > .c--labeling-act { display: none !important; }
+/* グローバルメニュー直後の余白を、この固定ページだけ約1行分に整える */
+.page-id-30806 #contents { margin-top: 18px; padding-top: 0; }
+.page-id-30806 .cps-post-box,
+.page-id-30806 .cps-post-main { padding-top: 0; }
+/* WordPressがHTML内の編集コメントを空段落として出力する分を除去 */
+.page-id-30806 .cps-post-main > p:first-child,
+.page-id-30806 .osechi-page > p:first-child { display: none !important; }
 .osechi-visually-hidden { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
 .osechi-page h2 { position: relative; display: flex; align-items: center; justify-content: center; min-height: 76px; margin: 0 0 1.4em; padding: 12px 0 18px; color: var(--osechi-wine-dark); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; font-size: clamp(1.55rem, 3vw, 2.15rem); line-height: 1.45; text-align: center; border-bottom: 0; }
 .osechi-page h2::after { position: absolute; bottom: 0; left: 50%; width: 72px; height: 2px; content: ""; background: linear-gradient(90deg, transparent, var(--osechi-gold), transparent); transform: translateX(-50%); }
