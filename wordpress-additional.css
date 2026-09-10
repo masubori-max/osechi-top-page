@@ -151,14 +151,30 @@
   .osechi-author__body { grid-template-columns: 1fr; }.osechi-author__placeholder { width: 130px; margin: 0 auto; }
   .osechi-final-grid { grid-template-columns: 1fr; }.osechi-final-grid a:last-child { grid-column: auto; }
 
-  /* この固定ページでは、スマホでもグローバルメニューの親4項目を常時表示する */
+  /* 固定ページと各投稿ページでは、スマホでもグローバルメニューの親4項目を常時表示する */
   .page-id-30806 #nav-container,
+  .single #nav-container,
+  .single-post #nav-container,
   .page-id-30806 #drawernav,
+  .single #drawernav,
+  .single-post #drawernav,
   .page-id-30806 #drawernav .fixed-content { position: static !important; display: block !important; width: 100% !important; height: auto !important; overflow: visible !important; opacity: 1 !important; visibility: visible !important; transform: none !important; }
-  .page-id-30806 #drawernav .menu-box { display: flex !important; align-items: stretch; justify-content: center; width: 100% !important; min-height: 44px; margin: 0 !important; padding: 0 !important; list-style: none; background: #fff; border-bottom: 1px solid #ded5c6; }
-  .page-id-30806 #drawernav .menu-box > li { display: block !important; flex: 1 1 25%; margin: 0 !important; padding: 0 !important; }
-  .page-id-30806 #drawernav .menu-box > li + li { border-left: 1px solid #ded5c6; }
-  .page-id-30806 #drawernav .menu-box > li > a { display: flex !important; align-items: center; justify-content: center; min-height: 44px; padding: 8px 3px !important; color: #332f2c !important; font-size: 12px; line-height: 1.25; text-align: center; text-decoration: none !important; white-space: nowrap; }
-  .page-id-30806 #drawernav .sub-menu { display: none !important; }
+  .single #drawernav .fixed-content,
+  .single-post #drawernav .fixed-content { position: static !important; display: block !important; width: 100% !important; height: auto !important; overflow: visible !important; opacity: 1 !important; visibility: visible !important; transform: none !important; }
+  .page-id-30806 #drawernav .menu-box,
+  .single #drawernav .menu-box,
+  .single-post #drawernav .menu-box { display: flex !important; align-items: stretch; justify-content: center; width: 100% !important; min-height: 44px; margin: 0 !important; padding: 0 !important; list-style: none; background: #fff; border-bottom: 1px solid #ded5c6; }
+  .page-id-30806 #drawernav .menu-box > li,
+  .single #drawernav .menu-box > li,
+  .single-post #drawernav .menu-box > li { display: block !important; flex: 1 1 25%; margin: 0 !important; padding: 0 !important; }
+  .page-id-30806 #drawernav .menu-box > li + li,
+  .single #drawernav .menu-box > li + li,
+  .single-post #drawernav .menu-box > li + li { border-left: 1px solid #ded5c6; }
+  .page-id-30806 #drawernav .menu-box > li > a,
+  .single #drawernav .menu-box > li > a,
+  .single-post #drawernav .menu-box > li > a { display: flex !important; align-items: center; justify-content: center; min-height: 44px; padding: 8px 3px !important; color: #332f2c !important; font-size: 12px; line-height: 1.25; text-align: center; text-decoration: none !important; white-space: nowrap; }
+  .page-id-30806 #drawernav .sub-menu,
+  .single #drawernav .sub-menu,
+  .single-post #drawernav .sub-menu { display: none !important; }
 }
 @media (prefers-reduced-motion: reduce) { .osechi-button { transition: none; } }
