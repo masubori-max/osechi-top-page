@@ -228,4 +228,36 @@ background: #BCBCBC;
   .osechi-final-grid { grid-template-columns: 1fr; }.osechi-final-grid a:last-child { grid-column: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .osechi-button, .osechi-summary-card { transition: none; } }
--
+@media (max-width: 600px) {
+  /* 投稿ページでも親メニュー4項目を常時表示する */
+  .single #nav-container,
+  .single #nav-container .scroll-content,
+  .single #nav-container nav,
+  .single #drawernav,
+  .single #drawernav .fixed-content,
+  .single-post #nav-container,
+  .single-post #nav-container .scroll-content,
+  .single-post #nav-container nav,
+  .single-post #drawernav,
+  .single-post #drawernav .fixed-content { position: static !important; display: block !important; width: 100% !important; height: auto !important; overflow: visible !important; opacity: 1 !important; visibility: visible !important; transform: none !important; }
+  .single #drawernav .menu-box,
+  .single #nav-container .menu-box,
+  .single-post #drawernav .menu-box,
+  .single-post #nav-container .menu-box { display: flex !important; align-items: stretch; justify-content: center; width: 100% !important; min-height: 44px; margin: 0 !important; padding: 0 !important; list-style: none; background: #fff; border-bottom: 1px solid #ded5c6; }
+  .single #drawernav .menu-box > li,
+  .single #nav-container .menu-box > li,
+  .single-post #drawernav .menu-box > li,
+  .single-post #nav-container .menu-box > li { display: block !important; flex: 1 1 25%; margin: 0 !important; padding: 0 !important; }
+  .single #drawernav .menu-box > li + li,
+  .single #nav-container .menu-box > li + li,
+  .single-post #drawernav .menu-box > li + li,
+  .single-post #nav-container .menu-box > li + li { border-left: 1px solid #ded5c6; }
+  .single #drawernav .menu-box > li > a,
+  .single #nav-container .menu-box > li > a,
+  .single-post #drawernav .menu-box > li > a,
+  .single-post #nav-container .menu-box > li > a { display: flex !important; align-items: center; justify-content: center; min-height: 44px; padding: 8px 3px !important; color: #332f2c !important; font-size: 12px; line-height: 1.25; text-align: center; text-decoration: none !important; white-space: nowrap; }
+  .single #drawernav .sub-menu,
+  .single #nav-container .sub-menu,
+  .single-post #drawernav .sub-menu,
+  .single-post #nav-container .sub-menu { display: none !important; }
+}
